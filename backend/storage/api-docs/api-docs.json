@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Example API",
+        "description": "This is an example API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/test/index": {
+            "get": {
+                "summary": "Get current user",
+                "description": "Returns information about the current user if the request is authenticated",
+                "operationId": "9eb075ea1c5b958565940ae1e215ad25",
+                "responses": {
+                    "200": {
+                        "description": "Everything OK"
+                    },
+                    "403": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        },
+        "/api/test/langs": {
+            "get": {
+                "summary": "Get languages",
+                "description": "Returns information about languages",
+                "operationId": "c73a67533ec874db51fdd3f86f16dbca",
+                "responses": {
+                    "200": {
+                        "description": "Everything OK"
+                    },
+                    "403": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        }
+    }
+}
